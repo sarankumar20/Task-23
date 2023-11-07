@@ -15,7 +15,7 @@ class Jquery:
         firefox_option = webdriver.FirefoxOptions()
         firefox_option.add_argument("--headless")
         # Create a new WebDriver instance
-        self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()), options=firefox_option)
+        self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
         self.driver.maximize_window()
     def navigation(self):
         try:
